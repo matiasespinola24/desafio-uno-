@@ -1,0 +1,64 @@
+/*rellenar los comentarios explicando que hace cada linea*/
+.caja1{
+    width: 200px;/* la funcion del width es ajustar el ancho de la caja 1 mediante la unidad px (pixeles)*/
+    height: 100px;/* la funcion del height es ajustar el alto de la caja 1 mediante la unidad px (pixeles)*/
+    background-color: red;/* su funcion es colocar un color de fondo de la caja 1 */
+    border:2px solid green;/* se agrega el tamaño de un borde liso con opcion de color verde*/
+    border:2px black solid;/* se agrega otro borde solido con un borde liso de color negro */
+}
+/*¿que le falta a los estilos de la caja 2 para que funcione?*/ 
+.caja2{
+    width: 150px;/* lo que le falta a los estilos de la caja dos para que funcione es colocar
+                    al principio un punto antes del nombre de la caja, ejemplo: .caja2 */
+    height: 150px;/* */
+    background-color:yellow;/* */
+    border:2px dotted orange;/* */
+}
+
+.caja3{
+    width: 200px;/* */
+    height: 200px;/* */
+    background-color:blue;/* */
+    border-radius: 50%;/* */
+    border:2px solid black;/* */
+}
+body{
+    display: flex;
+     background-color: aqua;
+}
+img{
+    display: flex;
+    width: 500px;
+    height: 400px;
+}
+.caja4 {
+width: 300px;
+height: 100px;
+background-color: brown;
+border:2px solid pink;
+}
+
+/*escribi los estilos para que la caja 4 sea rectangular, marron y tenga borde rosa*/
+/*completa los estilos para que el sitio sea responsive*/
+
+@media all and (min-width:600px) and (max-width: 1023px)/*vista tablet*/{
+    body{
+        background-color: aqua;
+    }
+    img{
+       width: 100%; 
+       height: 400px;
+
+    }
+}
+@media all and (max-width: 599px)/*vista celular*/{
+    body{
+        height: 400px;
+        width: 100%;
+        background-color: aqua;
+}
+    img{
+        height: 300px;
+    }
+}
+@media (min-width: 600px) {}
